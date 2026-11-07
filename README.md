@@ -15,9 +15,9 @@ the same data, compared on six evaluation metrics, and deployed in a Streamlit a
   (saved with the model, so the app needs no separate scaler)
 
 ## c. GitHub repository link
-<ADD YOUR GITHUB REPO URL>
+https://github.com/Acharya-BITS/ML-Assignment-2
 
-Streamlit app: <ADD YOUR STREAMLIT APP URL>
+Streamlit app: (https://ml-assignment-2-fnlmjz3ydjyvbprxcmbmww.streamlit.app/)
 
 ## d. Models used
 
