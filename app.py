@@ -47,9 +47,9 @@ if file:
     st.subheader("Classification report")
     st.text(classification_report(y, model.predict(X)))
 
-    with st.expander("Compare all models on this data"):
-        st.dataframe(pd.DataFrame(
-            [{"Model": n, **compute_metrics(load_model(p), X, y)} for n, p in MODELS.items()]
-        ).set_index("Model").round(4))
+    st.subheader("Comparison of all models on this data")   # ✅ CHANGED
+    st.dataframe(pd.DataFrame(                               # ✅ CHANGED: no expander, indent is 4 spaces
+        [{"Model": n, **compute_metrics(load_model(p), X, y)} for n, p in MODELS.items()]
+    ).set_index("Model").round(4))
 else:
     st.info("Upload test_data.csv to begin.")
